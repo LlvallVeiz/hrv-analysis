@@ -1,0 +1,36 @@
+HRV analysis: examples/nsr16265_rr.csv
+N = 480 intervals
+
+Time-domain HRV metrics
+----------------------------------
+Intervals (N)      480
+Mean RR            622.55 ms
+Mean HR            96.38 bpm
+SDNN               31.87 ms
+RMSSD              17.20 ms
+SDSD               17.20 ms
+NN50               7
+pNN50              1.46 %
+CV (SDNN/mean RR)  5.12 %
+RR range           531.2 - 796.9 ms
+
+Frequency-domain HRV metrics (Welch PSD, 4 Hz cubic interp.)
+----------------------------------------------------------
+Duration                    298.8 s
+VLF power (0.0033-0.04 Hz)  117.7 ms^2
+LF power (0.04-0.15 Hz)     518.9 ms^2
+HF power (0.15-0.40 Hz)     113.6 ms^2
+Total power                 750.2 ms^2
+LF/HF ratio                 4.57
+LF (nu)                     82.0
+HF (nu)                     18.0
+LF peak                     0.094 Hz
+HF peak                     0.156 Hz
+
+Note: recording is 5.0 min; frequency results are most reliable for >= 5 min recordings (Task Force 1996).
+
+Interpretation (rough orientation, not a diagnosis):
+  - SDNN 31.9 ms is below the published short-term range (short-term healthy mean ~50 ms).
+  - RMSSD 17.2 ms is below the published short-term range (short-term healthy mean ~42 ms).
+  - LF/HF 4.57 is within the published short-term range (short-term healthy mean ~2.8). LF/HF is not a clean index of sympathovagal balance; interpret with caution (Shaffer & Ginsberg 2017).
+  - Orientation only, for a ~5 min resting recording: norms depend on age, posture, breathing and fitness, and this tool is not a medical device.
